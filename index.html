@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X and 0</title>
+    <link rel = "stylesheet" href="styles.css">
+    <script src = "scripts.js"></script>
+</head>
+<body>
+    <div id = "main">
+        <h1>X and 0</h1>
+
+        <!--Game instructions-->
+
+        <p id="instructions">
+            Game starts when you tap on a box!<br><br>
+            First player starts as <b>X</b><br><br>
+            Second player as <b>0</b>
+        </p>
+
+        <br><br>
+
+        <!-- 3*3 grid of Boxes -->
+	<input type="text" id="b1" onclick= 
+        "box1(); winingCases();" readonly> 
+
+    <input type="text" id="b2" onclick= 
+        "box2(); winingCases();" readonly> 
+
+    <input type="text" id="b3" onclick= 
+        "box3(); winingCases();" readonly> 
+    <br><br> 
+
+    <input type="text" id="b4" onclick= 
+        "box4(); winingCases();" readonly> 
+        
+    <input type="text" id="b5" onclick= 
+        "box5(); winingCases();" readonly> 
+
+    <input type="text" id="b6" onclick= 
+        "box6(); winingCases();" readonly> 
+    <br><br> 
+
+    <input type="text" id="b7" onclick= 
+        "box7(); winingCases();" readonly> 
+
+    <input type="text" id="b8" onclick= 
+        "box8();winingCases();" readonly> 
+
+    <input type="text" id="b9" onclick= 
+        "box9();winingCases();" readonly> 
+
+    <!-- Grid end here -->
+    <br><br><br> 
+    <!-- Button to reset game -->
+    <button id="but" onclick="resetGame()"> 
+        RESET 
+    </button> 
+
+    <br><br> 
+    <!-- Space to show player turn -->
+    <p id="print"></p> 
+
+    </div>
+</body>
+</html>
